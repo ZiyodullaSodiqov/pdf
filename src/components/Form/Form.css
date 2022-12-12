@@ -1,0 +1,170 @@
+.form{
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+#file{
+   display: none;
+}
+
+.file-btn{
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #e5322d;
+    padding: 24px 56px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #fff;
+    transition: all .1s linear;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 14%);
+    max-width: 60vw;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+
+.file-btn:hover{
+     background: #000;
+}
+
+.form-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-ul li {
+    width: 36px;
+    height: 36px;
+    background: #e5322d;
+    border-radius: 50%;
+    transition: all .1s linear;
+    position: relative;
+}
+
+.form-ul li:nth-child(1):hover::before{
+    position: absolute;
+    content: 'Выбрать PDF из Google Drive';
+    width: 270px;
+    height: 36px;
+    background-color: #383e45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 60px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+
+.form-ul li:nth-child(1):hover::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #383e45;
+    top: 50%;
+    left: 55px;
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: 1px;
+    z-index: 1;
+}
+
+
+.form-ul li:nth-child(2):hover::before{
+    position: absolute;
+    content: 'Выбрать PDF из Dropbox';
+    width: 250px;
+    height: 36px;
+    background-color: #383e45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 60px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.form-ul li:nth-child(2):hover::after{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #383e45;
+    top: 50%;
+    left: 55px;
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: 1px;
+}
+
+.form-ul li:hover{
+    background: #383e45;
+}
+
+.form-ul li a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1080px){
+    .form-ul li:nth-child(1):hover::before{
+        right: 60px;
+        left: auto;
+    }
+    .form-ul li:nth-child(1):hover::after{
+        right: 55px;
+        left: auto;
+    }
+    .form-ul li:nth-child(2):hover::before{
+        right: 60px;
+        left: auto;
+    }
+    .form-ul li:nth-child(2):hover::after{
+        right: 55px;
+        left: auto;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .file-btn{
+        min-height: 80px;
+        font-size: 22px;
+        padding: 24px 32px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .form{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .file-btn{
+        min-width: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-ul{
+        flex-direction: row;
+        gap: 10px;
+    }
+}

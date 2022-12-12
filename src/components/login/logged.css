@@ -1,0 +1,108 @@
+.logImg{
+    width: 147px;
+    height: 36px;
+    transform: translate(360px, 200px);
+}
+.logDiv{
+    width: 50%;
+    height: 684px;
+}
+.facebookDiv{
+    width: 289px;
+    height: 37px;
+    border-radius: 8px;
+    background: #3B5998;
+    transform: translate(153px, 220px);
+}
+.googleDiv{
+    width: 274px;
+    height: 37px;
+    border-radius: 8px;    
+    background-color: #fff;
+    border: 0.5px solid #e5322d;
+    transform: translate(453px, 183px);
+}
+#name{
+    border: none;
+    outline: none;
+    width: 700px;
+    height: 42px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding-left: 30px;
+    margin: 10px;
+}
+#email{
+    border: none;
+    outline: none;
+    width: 700px;
+    height: 42px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding-left: 30px;
+    margin: 10px;
+}
+#pass{
+    border: none;
+    outline: none;
+    width: 700px;
+    height: 42px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding-left: 30px;
+    margin: 10px;   
+}
+form{
+    transform:translateY(200px) translateX(85px);
+}
+#btn-submit{
+    outline: none;
+    border: none;
+    width: 146px;
+    height: 42px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    transform: translate(-420px, 65px);
+    background-color: #e5322d;
+}
+#btn-submit:hover{
+    background-color: #000;
+    color: #fff;
+}
+.pId{
+    text-align: center;
+    transform: translateY(265px);
+    line-height: 25px;
+}
+.loggedDiv{
+    transform: translate(920px, -643px);
+    width: 50%;
+    height: 643px   ;
+    background-color: #eee;
+}
+@media screen and (max-width: 840px) {
+    .file-btn{
+        min-height: 80px;
+        font-size: 22px;
+        padding: 24px 32px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .form{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .file-btn{
+        min-width: 100%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .form-ul{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
